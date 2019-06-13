@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>EDA Phase 1 Express Boilerplate</title>
-  </head>
-  <body>
-    <ul>
-    {{#each users}}
-      <li>{{name}} ({{email}})</li>
-    {{/each}}
-    </ul>
-  </body>
-</html>
+<div>
+  {{#each members}}
+  <div>
+    <span>Member:{{member_name}}</span> <span>Amount owing: ${{amount_owing}}</span> <span>Date joined: {{date_joined}}</span>
+  </div>
+  {{/each}}
+</div>

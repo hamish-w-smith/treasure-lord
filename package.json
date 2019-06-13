@@ -20,9 +20,14 @@
   },
   "homepage": "https://github.com/dev-academy-challenges/boilerplate-knex#readme",
   "dependencies": {
+    "bluebird": "^3.5.5",
+    "csv-parse": "^4.4.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
+    "iconv-lite": "^0.4.24",
     "knex": "^0.16.3",
+    "knex-csv-seeder": "^0.4.1",
+    "lodash": "^4.17.11",
     "nodemon": "^1.18.10",
     "sqlite3": "^4.0.6"
   },
