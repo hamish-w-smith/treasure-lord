@@ -5,9 +5,30 @@ exports.seed = function(knex, Promise) {
     .then(function() {
       // Inserts seed entries
       return knex("members").insert([
-        { id: 1, name: "hamish", email: "hamish@work.com" },
-        { id: 2, name: "jenny", email: "jenny@work.com" },
-        { id: 3, name: "forest", email: "forest@work.com" }
+        {
+          id: 1,
+          first_name: "hamish",
+          last_name: "smith",
+          email: "hamish@work.com",
+          account_name: "hamish",
+          amount_owing: 20
+        },
+        {
+          id: 2,
+          first_name: "jenny",
+          last_name: "curran",
+          email: "jenny@work.com",
+          account_name: "jenny",
+          amount_owing: 20
+        },
+        {
+          id: 3,
+          first_name: "forest",
+          last_name: "gump",
+          email: "forest@work.com",
+          account_name: "gump",
+          amount_owing: 20
+        }
       ]);
     });
 };

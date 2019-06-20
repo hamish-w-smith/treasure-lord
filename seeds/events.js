@@ -5,9 +5,27 @@ exports.seed = function(knex, Promise) {
     .then(function() {
       // Inserts seed entries
       return knex("events").insert([
-        { id: 1, colName: "rowValue1" },
-        { id: 2, colName: "rowValue2" },
-        { id: 3, colName: "rowValue3" }
+        {
+          event_name: "brewing",
+          budget: 200,
+          sc_contribution: 100,
+          mem_contribution: 100,
+          event_id: 1
+        },
+        {
+          event_name: "football",
+          budget: 200,
+          sc_contribution: 100,
+          mem_contribution: 100,
+          event_id: 1
+        },
+        {
+          event_name: "party",
+          budget: 200,
+          sc_contribution: 100,
+          mem_contribution: 100,
+          event_id: 1
+        }
       ]);
     });
 };
